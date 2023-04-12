@@ -1,0 +1,19 @@
+service: tesis
+frameworkVersion: "3"
+
+useDotenv: true
+plugins:
+  - serverless-dotenv-plugin
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  function1:
+    handler: index.handler
+    
+
+environment:
+  PORT: ${env:PORT}
+    
+
