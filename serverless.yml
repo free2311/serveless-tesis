@@ -11,9 +11,7 @@ provider:
 functions:
   function1:
     handler: index.handler
-    
-
-environment:
-  PORT: ${env:PORT}
-    
-
+    events:
+      - http:
+          path: /sendmsg
+          method: get
