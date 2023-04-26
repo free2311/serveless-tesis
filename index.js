@@ -11,8 +11,8 @@ module.exports.handler = async () => {
       service: 'outlook',
       secure: false, // true for 465, false for other ports
       auth: {
-        user: "kyvillalban@itc.edu.co",
-        pass: "2190244.Kv"
+        user: "",
+        pass: ""
       }
     });
 
